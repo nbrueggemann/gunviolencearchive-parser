@@ -3,7 +3,7 @@ var Past72HourParser = require('../application/parsers/past72HourParser');
 var IncidentParser = require('../application/parsers/incidentParser');
 
 module.exports = function(express, appConfig, esClient, rootDir) {
-    express.post('/past72hours/', function (req, res) {
+    express.get('/past72hours/', function (req, res) {
         var baseUrl = "http://www.gunviolencearchive.org";
 
         var parser = new Past72HourParser();
