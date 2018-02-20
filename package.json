@@ -1,0 +1,29 @@
+{
+  "name": "build-system",
+  "version": "1.0.0",
+  "description": "High level build system for the oats application.  Monitors git for changes and automatically kicks off builds.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "aws-sdk": "^2.49.0",
+    "body-parser": "^1.17.1",
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.4",
+    "del": "^2.2.2",
+    "express": "^4.15.2",
+    "fast-html-parser": "^1.0.1",
+    "git-rev-sync": "^1.9.1",
+    "htmlparser2": "^3.9.2",
+    "moment": "^2.18.1",
+    "node-schedule": "^1.2.5",
+    "node-ssh": "^5.0.0",
+    "request": "2.81.0",
+    "simple-git": "^1.70.0",
+    "zip-folder": "^1.0.0"
+  }
+}
