@@ -4,7 +4,7 @@ npm install
 
 # Run
 
-node main.js
+node src/main.js
 
 # Endpoints
 
