@@ -17,6 +17,7 @@ var appConfig = require("./appConfig.json");
 // Include the routes
 var IncidentRoute = require('../routes/incident');
 var Past72Hours = require('../routes/past72hours');
+var WriteTestRoute = require('../routes/writeToFeatureServiceTest');
 
 class Application {
     constructor() {
@@ -49,6 +50,7 @@ class Application {
     _initializeExpressRoutes () {
         this.incidentRoute = new IncidentRoute(this.express, this.appConfig);
         this.past72Hours = new Past72Hours(this.express, this.appConfig);
+        this.writeTest = new WriteTestRoute(this.express, this.appConfig);
     }
 
 } // end class
